@@ -17,14 +17,13 @@ public class fibonacci {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите значение n: ");
         int n = scanner.nextInt();
 
         a = 0;
         b = 1;
 
         int result = fibonacci(n);
-        System.out.println("Число Фибоначчи для n = " + n + " равно " + result);
+        System.out.println(result);
 
         scanner.close();
     }

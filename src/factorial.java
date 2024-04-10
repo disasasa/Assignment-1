@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+
 public class factorial {
     public static int factorial(int n) {
         if (n < 0) {
