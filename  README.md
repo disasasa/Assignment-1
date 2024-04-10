@@ -1,0 +1,2 @@
+
+The project comprises various tasks, predominantly utilizing recursive algorithms. All tasks are executed in the main method and are not organized in a specific sequence. To clarify the required inputs for each task, comments have been added to the Main.java file.
