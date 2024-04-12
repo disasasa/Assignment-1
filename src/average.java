@@ -1,22 +1,22 @@
 import java.util.Scanner;
 
-public class average{
+public class average {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int totalCount = scanner.nextInt();
+        double average = findAverage(scanner, totalCount, 0, 0);
+        System.out.println(average);
+    }
 
-        double sum = 0;
-
-        System.out.println();
-
-        for (int i = 0; i < totalCount; i++) {
-            double number = scanner.nextDouble();
-            sum += number;
+    public static double findAverage(Scanner scanner, int totalCount, double sum, int count) {
+        if (count == totalCount) {
+            return sum / totalCount;
         }
 
-        double average = sum / totalCount;
-        System.out.println(average);
+        double number = scanner.nextDouble();
+        sum += number;
+        count++;
 
-        scanner.close();
+        return findAverage(scanner, totalCount, sum, count);
     }
 }
